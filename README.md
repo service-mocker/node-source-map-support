@@ -1,3 +1,11 @@
+# Source Map Support for Service Workers
+
+This fork added source map support for service worker context. As everything is asynchronous in server worker, `error.stack` is implemented as a promise:
+
+```js
+error.stack.then(stack => ...)
+```
+
 # Source Map Support
 [![Build Status](https://travis-ci.org/evanw/node-source-map-support.svg?branch=master)](https://travis-ci.org/evanw/node-source-map-support)
 
